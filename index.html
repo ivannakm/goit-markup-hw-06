@@ -22,9 +22,9 @@
           <nav class="nav">
           <a href="./index.html" class="logo"> Web<span class="web">Studio</span></a>
           <ul class="menu">
-            <li class="header"><a href="./index.html" class="header_link header_link_studio">Studio</a></li>
-            <li class="header"><a href="#our-portfolio" class="header_link">Portfolio</a></li>
-            <li class="header"><a href="#footer" class="header_link">Contacts</a></li>
+            <li class="header"><a class="header_link header_link_studio" href="./index.html">Studio</a></li>
+            <li class="header"><a class="header_link" href="#our-portfolio">Portfolio</a></li>
+            <li class="header"><a class="header_link" href="#footer">Contacts</a></li>
           </ul>
         </nav>
         <address class="contact_info">
@@ -33,11 +33,17 @@
           <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
+
     </header>
     <main>
     <!-- Section Hero 1  -->
-      <section class="main_title_box">
+      <section class="main_title_box section">
         <div class="container">
         <h1 class="main_title">Effective Solutions for Your Business</h1>
         <button type="button" class="button" style="cursor: pointer;">Order Service</button>
@@ -46,7 +52,7 @@
     
 
   <!-- Section 2 category  -->
-      <section class="category_section">
+      <section class="category_section section">
       <div class="container">
         <h2 class="visually-hidden">Benefits</h2>
         <ul class="category_list">
@@ -94,7 +100,7 @@
       
 <!-- Section 3 team -->
   
-      <section class="team_descr">
+      <section class="team_descr section">
         <div class="container">
         <h2 class="our_team">Our Team</h2>
         <ul class="team_list">
@@ -199,7 +205,7 @@
       </section>
 <!-- Section 4 Our Portfolio -->
 
-      <section  id="our-portfolio" class="portfolio_section">
+      <section  id="our-portfolio" class="portfolio_section section">
         <div class="container">
         <h2 class="our_portfolio">Our Portfolio</h2>
         <ul class="portfolio_list">
@@ -282,7 +288,7 @@
     </main>
          
 <!-- Footer -->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer section">
       <div class="container">
         <div class="footer_logo_text">
       <a href="./index.html" class="logo_web"> Web<span class="web_logo">Studio</span></a>
@@ -334,7 +340,7 @@
 
      <!-- Modal window contact form -->
 
-     <div class="modal-overlay is-open">
+     <div class="modal-overlay is-open hidden">
       <div class="modal">
 
         <button class="modal-close-btn" type="button">
@@ -396,9 +402,49 @@
 
           <button class="form-submit-btn" type="submit">Send</button>
         </form>
-
-
       </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+    <button class="mobile-menu-close-btn" type="button">
+      <svg class="icon-mobile-close" width="8" height="8"> 
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-list-item"><a class="" href="./index.html">Studio</a></li>
+          <li class="mobile-menu-list-item"><a class="" href="#our-portfolio">Portfolio</a></li>
+          <li class="mobile-menu-list-item"><a class="" href="#footer">Contacts</a></li>
+        </ul>
+      </nav>
+    <address class="mobile-menu-address">
+      <ul class="mobile-menu-contacts-list">
+        <li><a href="tel:+110001111111" class="mobile-menu-contact">+11 (000) 111-11-11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="mobile-menu-contact">info@devstudio.com</a></li>
+        </ul>
+    </address>
+    <div class="mobile-menu-socialmedia-container">
+      <ul class="mobile-menu-socialmedia-list">
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="https://www.instagram.com" target="_blank"> 
+          <svg class="mobile-menu-icon" width="24" height="24"> 
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg></a></li>
+         <li class="mobile-menu-social-item"><a class="mobile-menu-social-link" href="https://x.com" target="_blank"> <svg class="mobile-menu-icon" width="24" height="24"> 
+      <use href="./images/icons.svg#icon-twitter-1"></use>
+    </svg></a></li>
+         <li class="mobile-menu-social-item"><a class="mobile-menu-social-link" href="https://www.facebook.com" target="_blank"> <svg class="mobile-menu-icon" width="24" height="24"> 
+      <use href="./images/icons.svg#icon-facebook-1"></use>
+    </svg></a></li>
+         <li class="mobile-menu-social-item"><a class="mobile-menu-social-link" href="https://www.linkedin.com" target="_blank"> <svg class="mobile-menu-icon" width="24" height="24"> 
+      <use href="./images/icons.svg#icon-linkedin-1"></use>
+    </svg></a></li>
+      </ul>
+    </div>
+    </div>
     </div>
     
     <script>
