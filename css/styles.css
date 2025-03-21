@@ -347,10 +347,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .mobile-menu-contact:focus  {
     color: #404bbf;
     }
-
-.mobile-menu-socialmedia-container {
- 
-    }
 .mobile-menu-socialmedia-list {
     display: flex;
     flex-direction: row;
@@ -376,10 +372,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .mobile-menu-social-link:hover, .mobile-menu-social-link:focus {
     background: #404bbf;
       }
-.mobile-menu-icon {
-    }
-
-
 @media screen and (min-width:768px){
     .mobile-menu {
     display: none;
