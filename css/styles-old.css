@@ -187,7 +187,6 @@ padding: 100px 0 100px;
     margin-right: 120px;
   }
 
- 
 .footer_descr {
   font-weight: 400;
   font-size: 16px;
@@ -317,13 +316,5 @@ border-radius: 4px;
 width: 360px;
 height: 336px;
 } */
-.span-checkbox
-flex-shrink: 0;
 
 
-// mobile-menu toggle
-      document.querySelectorAll(".js-mobile-menu").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          document.querySelector(".mobile-menu").classList.toggle("is-open");
-        });
-      });
